@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Exercise Performance Calculator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0 auto;
+
+            max-width: 800px;
+
+            padding: 20px;
+
+            background: #f5f5f5; /* Super light off-white grey */
+
+            color: #333;
+
+            line-height: 1.6;
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin-top: 20px;
+
+            background-color: #fff; /* White background for table */
+
+        }
+
+        th, td {
+
+            border: 1px solid #ddd;
+
+            padding: 12px;
+
+            text-align: left;
+
+            font-size: 16px;
+
+        }
+
+        th {
+
+            background-color: #e0e0e0; /* Slightly darker shade for table headings */
+
+        }
+
+        th:first-child, td:first-child {
+
+            width: 40%;
+
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+
+            width: 30%;
+
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+
+            width: 30%;
+
+        }
+
+        header, footer, .disclaimer {
+
+            margin-bottom: 20px;
+
+        }
+
+        a {
+
+            color: #555;
+
+            text-decoration: underline;
+
+        }
+
+        a:hover {
+
+            text-decoration: underline;
+
+        }
+
+        p {
+
+            font-size: 16px;
+
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+
+                padding: 10px;
+
+                font-size: 14px;
+
+            }
+
+            th, td, p {
+
+                font-size: 14px;
+
+            }
+
+            header h1, .disclaimer h2 {
+
+                font-size: 24px;
+
+            }
+
+        }
+
+        .disclaimer h2 {
+
+            font-size: 24px;
+
+            color: #555;
+
+        }
+
+        .divider {
+
+            border-top: 1px solid #ddd;
+
+            margin-top: 20px;
+
+            margin-bottom: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <h1>Functional Fitness Assessment</h1>
+
+        <div class="divider"></div>
+
+        <p>This table was produced with the help of a personal trainer, using the work of <a href="https://peterattiamd.com/">Peter Attia</a> and <a href="https://www.andygalpin.com/">Andy Galpin</a> as a starting point. There is a lot of useful context to be gained from listening to or reading their work in full. This site is not affiliated with them and we do not imply that they would agree with this table. My personal trainer recommends measuring these metrics once every six months. Your personal training plan can then be tailored to focus on areas of relative weakness so you make balanced progress towards your goals. It is critical to avoid injury so please do not attempt these exercises without first engaging the services of a personal trainer or physiotherapist.</p>
+
+        <div class="divider"></div>
+
+        
+
+        <p>Select gender: <strong>Male</strong></p>
+
+        <p>Enter age: <strong>40</strong></p>
+
+        <p>We will add support for different ages and females soon. Your choices will determine the table below.</p>
+
+    </header>
+
+    
+
+    <table>
+
+        <tr>
+
+            <th>Exercise</th>
+
+            <th>Target</th>
+
+            <th>Notes</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Full depth squat 1 rep max</td>
+
+            <td>Bodyweight on bar</td>
+
+            <td>Full range of motion</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Bench chest press 1 rep max</td>
+
+            <td>100% of bodyweight</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Air squat</td>
+
+            <td>120 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Farmer carry 2 mins</td>
+
+            <td>50% bodyweight in each KB</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Full depth pull ups</td>
+
+            <td>10 reps</td>
+
+            <td>Full range of motion</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Balance - eyes open, one leg</td>
+
+            <td>45 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Balance - eyes shut, one leg</td>
+
+            <td>30 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Deadhang</td>
+
+            <td>90 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Plank</td>
+
+            <td>60 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Side plank</td>
+
+            <td>45 secs</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Overhead press 1 rep max</td>
+
+            <td>50% of bodyweight</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Leg extension 1 rep max</td>
+
+            <td>100% of bodyweight</td>
+
+            <td>Using both legs</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Goblet KB squat with 45s pause at bottom</td>
+
+            <td>50% of bodyweight</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Vertical jump</td>
+
+            <td>24 inches</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Horizontal jump</td>
+
+            <td>100% of height</td>
+
+            <td>Measure conservatively i.e. from back of closest heel upon landing</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Full range push-ups</td>
+
+            <td>25 reps</td>
+
+            <td>No pauses, full range of motion</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Functional movement screen</td>
+
+            <td>Observe symmetry/form/range/stability of squat, deadlift, pull up, bent row, push up, bench press</td>
+
+            <td>Use personal trainer</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Grip strength machine</td>
+
+            <td>50kg both hands</td>
+
+            <td></td>
+
+        </tr>
+
+        <tr>
+
+            <td>VO2 max</td>
+
+            <td>Top 10% for age and gender</td>
+
+            <td>Requires professional test, see <a href="https://www.rei.com/learn/expert-advice/how-to-measure-and-improve-your-vo2-max.html">here</a> for percentiles</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Fat Free Mass Index</td>
+
+            <td>>20</td>
+
+            <td>Requires DEXA scan</td>
+
+        </tr>
+
+    </table>
+
+    <footer>
+
+    
+
+    </footer>
+
+    <div class="divider"></div>
+
+    <h1>Disclaimers</h1>
+
+    <p><strong>Important:</strong> The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with a professional healthcare provider before starting any new exercise or health program. We are not liable for any injuries or health issues that may arise from the use of this information.</p>
+
+    <p>This site uses cookies to enhance user experience and improve functionality. By using our website, you consent to the use of cookies. Our privacy policy is simple: we do not collect personal information unless you choose to provide it, and we do not share your information with third parties without your consent.</p>
+
+</body>
+
+</html>
